@@ -1,0 +1,13 @@
+<h1>
+<%="Convert "+ @first_pair.upcase %>
+</h1>
+
+Go <a href="/forex">back</a>.
+
+<ul>
+  <% @symbols_array.each do |symbol| %>
+    <li>
+      <%="Convert 1 "+ @first_pair.upcase + " to " + symbol + "..."%>
+    </li>
+  <% end %>
+</ul>
