@@ -7,7 +7,9 @@ Go <a href="/forex">back</a>.
 <ul>
   <% @symbols_array.each do |symbol| %>
     <li>
-      <%="Convert 1 "+ @first_pair.upcase + " to " + symbol + "..."%>
+      <a href="/forex/<%=@first_pair%>/<%=symbol%>">
+        <%="Convert 1 "+ @first_pair.upcase + " to " + symbol + "..."%>
+      </a>
     </li>
   <% end %>
 </ul>

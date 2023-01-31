@@ -3,5 +3,5 @@ Rails.application.routes.draw do
   get("/", { :controller => "dashboards", :action => "index"})
   get("/forex", {:controller => "dashboards", :action=> "forex"})
   get("/forex/:first_pair", {:controller => "dashboards", :action=>"currency_pairs"})
-  get("/forex/:first_pair/:second_pair", {:controller => "dashboards", :action=>"results"})
+  get("/forex/:first_pair/:second_pair", {:controller => "dashboards", :action=>"results_pairs"})
 end
